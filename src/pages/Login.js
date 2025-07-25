@@ -28,6 +28,21 @@ export default function Login() {
             <input name="email" type="email" placeholder="Email" onChange={handleChange} required />
             <input name="password" type="password" placeholder="Password" onChange={handleChange} required />
             <button type="submit">Login</button>
+            <button
+                style={{ marginTop: "16px",
+                    padding: "6px 16px",
+                    fontSize: "0.9rem",
+                    background: "#1976d2",
+                    color: "#fff",
+                    border: "2px solid blue",
+                    borderRadius: "10px",
+                    cursor: "pointer",
+                    width: "100px",
+                    marginLeft: "250px" }}
+                onClick={() => navigate("/register")}
+            >
+                Register
+            </button>
         </FormWrapper>
     );
 }
